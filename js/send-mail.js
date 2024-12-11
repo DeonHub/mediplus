@@ -36,18 +36,9 @@ const sendEmail = (event) => {
 
 
   const makeRequest = () => {
-	const myHeaders = new Headers();
-	myHeaders.append("Cookie", "csrftoken=EFiv6Hfov5Ked27bFpZWhjbHl78lXGZy");
 
-	const requestOptions = {
-	method: "GET",
-	headers: myHeaders,
-	redirect: "follow"
-	};
-
-	fetch("https://smartdoctor.onrender.com", requestOptions)
-	.then((response) => console.log("Hello"))
-	.then((result) => console.log("Hello"))
+	fetch("https://cors-anywhere.herokuapp.com/https://smartdoctor.onrender.com", { method: "GET" })
+	.then(() => console.log("Hello, world!"))
 	.catch((error) => console.error(error));
   }
 
