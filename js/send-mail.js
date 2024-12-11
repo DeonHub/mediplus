@@ -46,8 +46,8 @@ const sendEmail = (event) => {
 	};
 
 	fetch("https://smartdoctor.onrender.com", requestOptions)
-	.then((response) => response.text())
-	.then((result) => console.log(result))
+	.then((response) => console.log("Hello"))
+	.then((result) => console.log("Hello"))
 	.catch((error) => console.error(error));
   }
 
