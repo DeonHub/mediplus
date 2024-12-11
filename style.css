@@ -904,9 +904,12 @@ body{
 	padding:120px 0;
 }
 .fun-facts{
-	background:url('img/fun-bg.jpg');
+	background:url('img/pic11.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
+	/* background-position: center; */
+	background-attachment: fixed;
+	position:relative;
 }
 .fun-facts .single-fun {
 	
@@ -1010,11 +1013,12 @@ body{
 .why-choose .choose-right{
 	height:100%;
 	width:100%;
-	background-image:url('img/video-bg.jpg');
+	background-image:url('img/pic3.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
 	position:relative;
+	border-radius: 10px
 }
 .why-choose .choose-right .video {
 	color: #fff;
@@ -1070,7 +1074,7 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action{
-	background-image:url('img/call-bg.jpg');
+	background-image:url('img/pic12.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
@@ -2037,6 +2041,10 @@ body{
 	position:relative;
 	overflow:hidden;
 }
+.blog .single-news .news-head img{
+	border-radius: 10px !important;
+}
+
 .blog .single-news .news-content {
 	text-align: left;
 	background: #fff;
